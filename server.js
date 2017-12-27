@@ -8,7 +8,8 @@ app.get('/', function (req, res) {
 });
 
 app.use('/store' ,function(req, res, next){
-    console.log('Przed wejściem towar nie zakupiony w naszym sklepie zgłaszamy na podstawie paragonu!!!');
+    console.log('Przed wejściem towar nie zakupiony w naszym sklepie zgłaszamy na podstawie paragonu!');
+    console.log('Po odejściu od kasy...wiadomo.');
     next();
 });
 
